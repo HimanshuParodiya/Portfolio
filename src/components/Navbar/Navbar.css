@@ -8,6 +8,11 @@
 
 }
 
+.header__container .light {
+    background-color: white;
+    color: black;
+}
+
 .navbar__container .logo {
     font-size: 4rem;
     color: #845EC2;
@@ -24,6 +29,7 @@
 
 .navbar__menuLink {
     cursor: pointer;
+    color: white;
 }
 
 .navbar__menuLi::after {
@@ -44,7 +50,6 @@
 
 .hamburgerMenu {
     font-size: 3rem;
-    color: red;
     display: none;
     cursor: pointer;
 
