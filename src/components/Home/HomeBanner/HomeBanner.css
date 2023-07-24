@@ -1,0 +1,157 @@
+.homeBanner__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2.4rem;
+}
+
+.header__container .light {
+    background-color: #FAF3F0;
+    color: black;
+}
+
+.homeBanner__left {
+    font-size: 3rem;
+    flex: 0.5;
+}
+
+.hey {
+    display: block;
+    font-size: 5rem;
+}
+
+.selfIntro {
+    margin-left: 2rem;
+}
+
+.name {
+    font-size: 4rem;
+    color: #845EC2;
+    font-weight: 900;
+
+}
+
+.homeBannerLeft__intro {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.intro__tagline {
+    font-weight: 600;
+    border-bottom: 2px solid #845EC2;
+    color: #845EC2;
+}
+
+.homeBanner__right {
+    flex: 0.4;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.homeBanner__right img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .homeBanner__container {
+        flex-direction: column-reverse;
+        padding: 3rem;
+    }
+
+    .homeBanner__left {
+        font-size: 2rem;
+    }
+
+    .hey {
+        display: block;
+        font-size: 3rem;
+
+    }
+
+    .selfIntro {
+        margin-left: 1.4rem;
+    }
+
+    .name {
+        font-size: 3rem;
+
+    }
+
+    .homeBanner__right {
+        flex: 0.4;
+        border-radius: 100%;
+        overflow: hidden;
+        width: 80%;
+    }
+
+    .homeBanner__right img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+
+}
+
+@media (min-width:601px) and (max-width: 768px) {
+    .homeBanner__container {
+        flex-direction: column-reverse;
+        padding: 1rem;
+
+    }
+
+    .homeBanner__left {
+        font-size: 2rem;
+    }
+
+    .hey {
+        display: block;
+        font-size: 3rem;
+
+    }
+
+    .selfIntro {
+        margin-left: 1.4rem;
+    }
+
+    .name {
+        font-size: 3rem;
+
+    }
+
+    .homeBanner__right {
+        width: 60%;
+    }
+
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .homeBanner__container {
+        flex-direction: row;
+        padding: 1rem;
+
+    }
+
+    .homeBanner__left {
+        font-size: 3rem;
+    }
+
+    .hey {
+        display: block;
+        font-size: 4rem;
+
+    }
+
+    .selfIntro {
+        margin-left: 1.4rem;
+    }
+
+    .name {
+        font-size: 4rem;
+
+    }
+
+}

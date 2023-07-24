@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useDispatch, useSelector } from "react-redux";
 import { RxCross2 } from "react-icons/rx";
 import { setTheme } from "../../Store/Slice/ThemeSlice";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const theme = useSelector((state) => state.theme.appTheme);
@@ -18,36 +19,45 @@ const Navbar = () => {
   };
 
   return (
-    <header className="header__container container ">
+    <header className="header__container  container">
       <nav className={`navbar__container ${theme ? "light" : ""}`}>
         <div className="logo">HP</div>
-        <div className="navbar__menu">
-          <div
-            className={`hamburgerMenu ${theme ? "light" : ""}`}
-            onClick={handleHamburgerMenu}
-          >
+        <div className={`navbar__menu ${theme ? "light" : ""}`}>
+          <div className="hamburgerMenu" onClick={handleHamburgerMenu}>
             {showHamburger ? <GiHamburgerMenu /> : <RxCross2 />}
           </div>
           <ul ref={hamburgerIcon} className="navbar__menuUl">
             <li className="navbar__menuLi">
-              <a href="#" className="navbar__menuLink">
+              <NavLink
+                to="/"
+                className={`navbar__menuLink ${theme ? "light" : ""}`}
+              >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="navbar__menuLi">
-              <a href="#" className="navbar__menuLink">
+              <NavLink
+                to="/about"
+                className={`navbar__menuLink ${theme ? "light" : ""}`}
+              >
                 About
-              </a>
+              </NavLink>
             </li>
             <li className="navbar__menuLi">
-              <a href="#" className="navbar__menuLink">
+              <NavLink
+                to="/projects"
+                className={`navbar__menuLink ${theme ? "light" : ""}`}
+              >
                 Projects
-              </a>
+              </NavLink>
             </li>
             <li className="navbar__menuLi">
-              <a href="#" className="navbar__menuLink">
+              <NavLink
+                to="/contact"
+                className={`navbar__menuLink ${theme ? "light" : ""}`}
+              >
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
