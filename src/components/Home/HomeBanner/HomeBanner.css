@@ -1,9 +1,14 @@
 .homeBanner__container {
+    margin-top: 3rem;
+    padding: 2.4rem;
+    /* border: 1px solid red; */
+
+}
+
+.homeBanner__top {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 3rem;
-    padding: 2.4rem;
 }
 
 .header__container .light {
@@ -55,10 +60,17 @@
 }
 
 
+.homeBanner__bottom {
+    border: 1px solid red;
+}
+
 @media only screen and (max-width: 600px) {
     .homeBanner__container {
-        flex-direction: column-reverse;
         padding: 3rem;
+    }
+
+    .homeBanner__top {
+        flex-direction: column-reverse;
     }
 
     .homeBanner__left {
@@ -98,9 +110,11 @@
 
 @media (min-width:601px) and (max-width: 768px) {
     .homeBanner__container {
-        flex-direction: column-reverse;
         padding: 1rem;
+    }
 
+    .homeBanner__top {
+        flex-direction: column-reverse;
     }
 
     .homeBanner__left {
@@ -130,9 +144,11 @@
 
 @media (min-width:769px) and (max-width: 1024px) {
     .homeBanner__container {
-        flex-direction: row;
         padding: 1rem;
+    }
 
+    .homeBanner__top {
+        flex-direction: row;
     }
 
     .homeBanner__left {

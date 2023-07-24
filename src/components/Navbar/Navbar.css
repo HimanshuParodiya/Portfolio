@@ -60,6 +60,12 @@
     cursor: pointer;
 }
 
+.navbar__menuLi .active {
+    border-bottom: 2px solid #845EC2;
+    padding: 0.1rem;
+    /* color: red; */
+}
+
 @media only screen and (max-width : 600px) {
     .navbar__container {
         padding: 1rem;

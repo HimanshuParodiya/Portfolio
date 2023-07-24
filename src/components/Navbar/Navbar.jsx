@@ -29,6 +29,7 @@ const Navbar = () => {
           <ul ref={hamburgerIcon} className="navbar__menuUl">
             <li className="navbar__menuLi">
               <NavLink
+                activeclassname="active"
                 to="/"
                 className={`navbar__menuLink ${theme ? "light" : ""}`}
               >
@@ -37,6 +38,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__menuLi">
               <NavLink
+                activeclassname="active"
                 to="/about"
                 className={`navbar__menuLink ${theme ? "light" : ""}`}
               >
@@ -45,6 +47,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__menuLi">
               <NavLink
+                activeclassname="active"
                 to="/projects"
                 className={`navbar__menuLink ${theme ? "light" : ""}`}
               >
@@ -53,6 +56,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__menuLi">
               <NavLink
+                activeclassname="active"
                 to="/contact"
                 className={`navbar__menuLink ${theme ? "light" : ""}`}
               >
