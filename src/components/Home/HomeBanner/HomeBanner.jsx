@@ -3,7 +3,7 @@ import "./HomeBanner.css";
 import { useSelector } from "react-redux";
 import MyImage from "/src/assets/me.jpg";
 import Typewriter from "typewriter-effect/dist/core";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 const HomeBanner = () => {
   const theme = useSelector((state) => state.theme.appTheme);
@@ -60,7 +60,24 @@ const HomeBanner = () => {
         </motion.div>
       </div>
 
-      {/* <div className="homeBanner__bottom">resume download krne wala button</div> */}
+      <div className="homeBanner__bottom">
+        <div className="homeBannerBottom__buttons">
+          <a
+            href="#"
+            className={`button__resume bottom__button ${theme ? "light" : ""}`}
+          >
+            Resume
+          </a>
+          <a
+            // href="https://github.com/"
+            href="#"
+            target="_blank"
+            className={`button__Github bottom__button ${theme ? "light" : ""}`}
+          >
+            Github
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

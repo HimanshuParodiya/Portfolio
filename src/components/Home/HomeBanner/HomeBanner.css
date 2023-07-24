@@ -1,7 +1,6 @@
 .homeBanner__container {
     margin-top: 3rem;
     padding: 2.4rem;
-    /* border: 1px solid red; */
 
 }
 
@@ -61,7 +60,31 @@
 
 
 .homeBanner__bottom {
-    border: 1px solid red;
+    width: 50%;
+}
+
+
+.bottom__button {
+    color: white;
+    border: 1px solid #845EC2;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    margin: 4rem;
+    border-radius: 10rem;
+    transition: all 0.255s ease-in;
+    font-weight: 600;
+
+}
+
+.bottom__button:hover {
+    background-color: #845EC2;
+
+
+}
+
+.homeBannerBottom__buttons .light {
+    background-color: #845EC2;
+
 }
 
 @media only screen and (max-width: 600px) {
