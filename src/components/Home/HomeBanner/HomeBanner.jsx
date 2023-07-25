@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import MyImage from "/src/assets/me.jpg";
 import Typewriter from "typewriter-effect/dist/core";
 import { motion } from "framer-motion";
+// import animatedText from "../../../assets/AnimatedText.png";
 
 const HomeBanner = () => {
   const theme = useSelector((state) => state.theme.appTheme);
@@ -23,7 +24,7 @@ const HomeBanner = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ delay: 1, duration: 1 }}
           className="homeBanner__left"
         >
           <div className="homeBannerLeft__greeting">
@@ -53,14 +54,19 @@ const HomeBanner = () => {
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ delay: 1, duration: 1 }}
           className="homeBanner__right"
         >
           <img src={MyImage} alt="user" />
         </motion.div>
       </div>
 
-      <div className="homeBanner__bottom">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="homeBanner__bottom"
+      >
         <div className="homeBannerBottom__buttons">
           <a
             href="#"
@@ -77,7 +83,11 @@ const HomeBanner = () => {
             Github
           </a>
         </div>
-      </div>
+        {/* <div className="hireMe">
+          <img className="hireMe__image" src={animatedText} alt="" />
+          <div className="hireText">Excited to work </div>
+        </div> */}
+      </motion.div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import TransitionEffect from "../Transition/TransitionEffect";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="home__container container">
       <TransitionEffect />
       <HomeBanner />
     </div>

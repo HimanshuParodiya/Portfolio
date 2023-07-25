@@ -8,7 +8,7 @@
 }
 
 .pageOne {
-    background-color: #78C1F3;
+    background-color: #0079FF;
     z-index: 30;
 
 }
@@ -19,6 +19,6 @@
 }
 
 .pageThree {
-    background-color: black;
+    background-color: #191825;
     z-index: 10;
 }

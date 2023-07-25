@@ -62,7 +62,7 @@
 
 .navbar__menuLi .active {
     border-bottom: 2px solid #845EC2;
-    padding: 0.1rem;
+    /* padding: 0.1rem; */
     /* color: red; */
 }
 
