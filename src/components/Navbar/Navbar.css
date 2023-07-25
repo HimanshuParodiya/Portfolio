@@ -5,7 +5,7 @@
     align-items: center;
     padding-bottom: 2rem;
     border-bottom: 1px solid #845EC2;
-
+    height: 10vh;
 }
 
 .header__container .light {

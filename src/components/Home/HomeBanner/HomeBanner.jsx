@@ -2,8 +2,9 @@ import React, { useEffect, useRef } from "react";
 import "./HomeBanner.css";
 import { useSelector } from "react-redux";
 import MyImage from "/src/assets/me.jpg";
-import Typewriter from "typewriter-effect/dist/core";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
+import TypingAnimation from "../../../Utils/TypingAnimation/TypingAnimation";
 // import animatedText from "../../../assets/AnimatedText.png";
 
 const HomeBanner = () => {
@@ -11,20 +12,13 @@ const HomeBanner = () => {
 
   const myName = useRef(null);
 
-  useEffect(() => {
-    new Typewriter(myName.current, {
-      strings: ["Himanshu."],
-      autoStart: true,
-      loop: true,
-    });
-  }, []);
   return (
     <div className={`homeBanner__container ${theme ? "light" : ""}`}>
       <div className="homeBanner__top">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
+          transition={{ delay: 0.8, duration: 1 }}
           className="homeBanner__left"
         >
           <div className="homeBannerLeft__greeting">
@@ -32,8 +26,8 @@ const HomeBanner = () => {
               <span className="hey">Hey,</span>
               <span className="selfIntro">
                 My name is{" "}
-                <span className="name" ref={myName}>
-                  Himanshu.
+                <span className="name">
+                  <TypingAnimation element={myName} text={["Himanshu"]} />
                 </span>
               </span>
             </div>
@@ -54,7 +48,7 @@ const HomeBanner = () => {
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
+          transition={{ delay: 0.8, duration: 1 }}
           className="homeBanner__right"
         >
           <img src={MyImage} alt="user" />
@@ -74,14 +68,15 @@ const HomeBanner = () => {
           >
             Resume
           </a>
-          <a
+
+          <NavLink
             // href="https://github.com/"
-            href="#"
-            target="_blank"
+
+            to="/about"
             className={`button__Github bottom__button ${theme ? "light" : ""}`}
           >
-            Github
-          </a>
+            More about me
+          </NavLink>
         </div>
         {/* <div className="hireMe">
           <img className="hireMe__image" src={animatedText} alt="" />

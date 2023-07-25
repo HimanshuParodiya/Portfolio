@@ -1,6 +1,6 @@
 .homeBanner__container {
     margin-top: 8rem;
-    padding: 2.4rem;
+    padding: 2.4rem 2.4rem 0 2.4rem;
 
 }
 
@@ -31,8 +31,10 @@
 
 .name {
     font-size: 4rem;
+    position: relative;
     color: #845EC2;
     font-weight: 900;
+
 
 }
 
@@ -60,7 +62,7 @@
 
 
 .homeBanner__bottom {
-    width: 50%;
+    width: 80%;
     /* margin-top: 3rem; */
 }
 
@@ -128,8 +130,10 @@
 
 @media only screen and (max-width: 600px) {
     .homeBanner__container {
-        padding: 3rem;
-        margin-top: 3rem;
+        /* padding: 3rem; */
+        padding: 3rem 3rem 0 3rem;
+
+        margin-top: 0rem;
 
     }
 
@@ -171,8 +175,15 @@
 
 
     .homeBanner__bottom {
-        width: 50%;
+        width: 100%;
         margin-top: 3rem;
+    }
+
+    .homeBannerBottom__buttons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
     }
 
 
@@ -188,7 +199,7 @@
 
 @media (min-width:601px) and (max-width: 768px) {
     .homeBanner__container {
-        padding: 1rem;
+        padding: 1rem 1rem 0 1rem;
         margin-top: 3rem;
 
     }
@@ -221,8 +232,15 @@
     }
 
     .homeBanner__bottom {
-        width: 50%;
+        width: 100%;
         margin-top: 3rem;
+    }
+
+    .homeBannerBottom__buttons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
     }
 
 
@@ -237,7 +255,8 @@
 
 @media (min-width:769px) and (max-width: 1024px) {
     .homeBanner__container {
-        padding: 1rem;
+        padding: 1rem 1rem 0 1rem;
+
         margin-top: 9rem;
 
     }
@@ -268,9 +287,10 @@
 
 
     .homeBanner__bottom {
-        width: 50%;
+        width: max-content;
         margin-top: 3rem;
     }
+
 
 
     .bottom__button {
@@ -314,7 +334,7 @@
 
 
     .homeBanner__bottom {
-        width: 50%;
+        width: max-content;
         margin-top: 3rem;
     }
 

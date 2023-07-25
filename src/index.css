@@ -27,8 +27,11 @@
 }
 
 body {
-  overflow: hidden;
   background-color: #191825;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .light {

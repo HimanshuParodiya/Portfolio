@@ -1,0 +1,55 @@
+.aboutBanner__intro {
+    /* text-align: center; */
+    /* margin-top: 15%; */
+    padding-left: 20%;
+    font-size: 5rem;
+}
+
+.aboutBanner__abilities {
+    font-size: 10rem;
+    height: max-content;
+    color: #845EC2;
+    height: 100%;
+    position: relative;
+}
+
+.aboutBanner__objective {
+    font-size: 2rem;
+    margin-top: 4rem;
+    position: relative;
+    padding-left: 4rem;
+}
+
+.aboutBanner__objective ul {
+    margin-left: 6rem;
+}
+
+.highlighted__text {
+    color: #845EC2;
+    font-size: 2rem;
+}
+
+p {
+    margin-top: 5rem;
+    background-color: #191825;
+    position: relative;
+}
+
+p:last-child {
+    padding-bottom: 3rem;
+}
+
+
+
+
+.vertical__progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #845EC2;
+    transform-origin: top;
+    transition: all 0.1s ease-in-out;
+
+}
