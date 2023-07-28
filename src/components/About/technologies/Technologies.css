@@ -1,0 +1,27 @@
+.technologies__container {
+    /* padding-left: 20%; */
+    margin-left: 6rem;
+    margin-top: 10rem;
+
+
+}
+
+.technologies__heading {
+    text-align: center;
+    font-size: 5rem;
+    color: #7248B6;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 10rem;
+    /* color: linear-gradient */
+}
+
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}

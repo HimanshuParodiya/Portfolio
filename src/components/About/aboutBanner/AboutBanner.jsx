@@ -1,14 +1,41 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./AboutBanner.css";
 import TypingAnimation from "../../../Utils/TypingAnimation/TypingAnimation";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
+import ArrowDownwardSharpIcon from "@mui/icons-material/ArrowDownwardSharp";
 
 const AboutBanner = () => {
   const theme = useSelector((state) => state.theme.appTheme);
+  const [showScrollButton, setShowScrollButton] = useState(true);
+
+  const handleScrollOnClick = () => {
+    const totalScrollHeight = document.documentElement.scrollHeight;
+    const scrollPositionFromBottom =
+      totalScrollHeight - window.innerHeight - 300; // Scroll 200 pixels from the bottom
+
+    window.scrollTo({
+      top: scrollPositionFromBottom,
+      behavior: "smooth",
+    });
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setShowScrollButton(false);
+      } else {
+        setShowScrollButton(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const textEleme = useRef(null);
-  const { scrollYProgress } = useScroll();
   return (
     <div className="aboutBanner__container container">
       <motion.div
@@ -33,12 +60,7 @@ const AboutBanner = () => {
           />
         </span>
       </motion.div>
-
       <div className="aboutBanner__objective">
-        <motion.div
-          style={{ scaleY: scrollYProgress }}
-          className="vertical__progress"
-        />
         <ul>
           <motion.p
             initial={{ x: 200, opacity: 0 }}
@@ -73,10 +95,10 @@ const AboutBanner = () => {
             className={` ${theme ? "light" : ""}`}
           >
             My educational journey began with a strong academic foundation,
-            followed by a diploma in mechanical engineering. While exploring the
-            world of machines and design, I discovered my passion for technology
-            and problem-solving. This led me to embrace frontend development as
-            my true calling, and I decided to pivot my career in this rapidly
+            followed by the mechanical engineering. While exploring the world of
+            machines and design, I discovered my passion for technology and
+            problem-solving. This led me to embrace frontend development as my
+            true calling, and I decided to pivot my career in this rapidly
             evolving domain.
           </motion.p>
           <motion.p
@@ -105,6 +127,25 @@ const AboutBanner = () => {
           </motion.p>
         </ul>
       </div>
+      {showScrollButton && (
+        <motion.div
+          onClick={handleScrollOnClick}
+          // initial={{ scale: 1 }}
+          // whileHover={{ scale: 1.2 }}
+          animate={{
+            y: [0, 20, 0], // The animation will scale from 1 to 1.2 and then back to 1
+            transition: {
+              duration: 0.5,
+              repeat: Infinity, // Repeat the animation indefinitely
+              // repeatType: "reverse", // Reverse the animation on repeat (yoyo effect)
+            },
+          }}
+          // transition={{ yoyo: 10 }}
+          className="scroll__down"
+        >
+          <ArrowDownwardSharpIcon className="scrollDown__icon" fontSize="30" />
+        </motion.div>
+      )}
     </div>
   );
 };

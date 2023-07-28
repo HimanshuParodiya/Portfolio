@@ -1,3 +1,7 @@
+.aboutBanner__container {
+    position: relative;
+}
+
 .aboutBanner__intro {
     /* text-align: center; */
     /* margin-top: 15%; */
@@ -16,8 +20,9 @@
 .aboutBanner__objective {
     font-size: 2rem;
     margin-top: 4rem;
+    /* border: 1px solid red; */
     position: relative;
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
 }
 
 .aboutBanner__objective ul {
@@ -27,6 +32,7 @@
 .highlighted__text {
     color: #845EC2;
     font-size: 2rem;
+    font-weight: 600;
 }
 
 p {
@@ -35,21 +41,28 @@ p {
     position: relative;
 }
 
+p:first-child {
+    margin-top: 0rem;
+}
+
 p:last-child {
     padding-bottom: 3rem;
 }
 
-
-
-
-.vertical__progress {
+.scroll__down {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 4px;
-    height: 100%;
-    background-color: #845EC2;
-    transform-origin: top;
-    transition: all 0.1s ease-in-out;
+    bottom: 3%;
+    left: 50%;
+    cursor: pointer;
+    /* background-color: #845EC2; */
+    /* z-index: -1; */
+    border-radius: 50px;
+    padding: 5px;
+}
 
+.scrollDown__icon {
+    /* z-index: 1; */
+    color: white;
+
+    font-size: 3rem;
 }

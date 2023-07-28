@@ -1,0 +1,15 @@
+.about__container {
+    position: relative;
+}
+
+.vertical__progress {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 4px;
+    height: 100%;
+    background-color: #845EC2;
+    transform-origin: top;
+    /* transition: all 0.1s ease-in-out; */
+
+}
