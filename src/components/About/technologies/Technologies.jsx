@@ -15,7 +15,7 @@ import { TbBrandFramerMotion, TbBrandRedux } from "react-icons/tb";
 const Technologies = () => {
   return (
     <div className="technologies__container">
-      <span className="technologies__heading">TECHNOLOGIES I KNOW</span>
+      <h1 className="technologies__heading">TECHNOLOGIES I KNOW</h1>
       <div className="card">
         <Card icon={<SiHtml5 />} title="HTML" color="#DD4B25" />
         <Card icon={<SiCss3 />} title="CSS" color="#254BDD" />

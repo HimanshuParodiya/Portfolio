@@ -11,8 +11,7 @@ const AboutBanner = () => {
 
   const handleScrollOnClick = () => {
     const totalScrollHeight = document.documentElement.scrollHeight;
-    const scrollPositionFromBottom =
-      totalScrollHeight - window.innerHeight - 300; // Scroll 200 pixels from the bottom
+    const scrollPositionFromBottom = totalScrollHeight - window.innerHeight - 0; // Scroll 200 pixels from the bottom
 
     window.scrollTo({
       top: scrollPositionFromBottom,

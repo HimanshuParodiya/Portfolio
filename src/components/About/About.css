@@ -1,5 +1,6 @@
 .about__container {
     position: relative;
+    border: 1px solid transparent;
 }
 
 .vertical__progress {
@@ -12,4 +13,37 @@
     transform-origin: top;
     /* transition: all 0.1s ease-in-out; */
 
+}
+
+@media only screen and (max-width : 600px) {
+
+
+    .vertical__progress {
+        width: 6px;
+
+    }
+
+}
+
+@media (min-width : 601px) and (max-width : 768px) {
+    .vertical__progress {
+        width: 6px;
+
+    }
+}
+
+@media (min-width : 769px) and (max-width : 1024px) {
+    .vertical__progress {
+        left: 2%;
+        width: 6px;
+
+    }
+}
+
+@media (min-width : 1025px) and (max-width : 1250px) {
+    .vertical__progress {
+        left: 2%;
+        width: 6px;
+
+    }
 }

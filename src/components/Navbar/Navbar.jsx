@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -14,8 +14,17 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const hamburgerIcon = useRef();
   const handleHamburgerMenu = () => {
-    hamburgerIcon.current.classList.toggle("show");
+    if (showHamburger) {
+      hamburgerIcon.current.classList.add("show");
+    } else {
+      hamburgerIcon.current.classList.remove("show");
+    }
     setShowHamburger(!showHamburger);
+  };
+
+  const handleManu = () => {
+    setShowHamburger(!showHamburger);
+    hamburgerIcon.current.classList.remove("show");
   };
 
   return (
@@ -26,7 +35,11 @@ const Navbar = () => {
           <div className="hamburgerMenu" onClick={handleHamburgerMenu}>
             {showHamburger ? <GiHamburgerMenu /> : <RxCross2 />}
           </div>
-          <ul ref={hamburgerIcon} className="navbar__menuUl">
+          <ul
+            ref={hamburgerIcon}
+            className="navbar__menuUl"
+            onClick={handleManu}
+          >
             <li className="navbar__menuLi">
               <NavLink
                 activeclassname="active"

@@ -17,7 +17,7 @@ const Card = ({ icon, title, color }) => {
   };
   return (
     <div className="card__container">
-      <Tilt coptions={defaultOptions} style={{ width: 250 }}>
+      <Tilt coptions={defaultOptions}>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
