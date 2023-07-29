@@ -11,6 +11,7 @@ const Navbar = () => {
   const theme = useSelector((state) => state.theme.appTheme);
   //   console.log(theme);
   const [showHamburger, setShowHamburger] = useState(true);
+  // const [mobileMenuColor, setMobileMenuColor] = useState(true);
   const dispatch = useDispatch();
   const hamburgerIcon = useRef();
   const handleHamburgerMenu = () => {
@@ -38,6 +39,9 @@ const Navbar = () => {
           <ul
             ref={hamburgerIcon}
             className="navbar__menuUl"
+            style={{
+              backgroundColor: theme ? "#FAF3F0" : "#191825",
+            }}
             onClick={handleManu}
           >
             <li className="navbar__menuLi">

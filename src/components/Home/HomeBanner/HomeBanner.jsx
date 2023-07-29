@@ -50,6 +50,10 @@ const HomeBanner = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.8, duration: 1 }}
           className="homeBanner__right"
+          style={{
+            backgroundColor: !theme ? "#191825" : "#FAF3F0",
+            filter: ` drop-shadow(2px 2px 10px ${theme ? "#111" : "#fff"})`,
+          }}
         >
           <img src={MyImage} alt="user" />
         </motion.div>

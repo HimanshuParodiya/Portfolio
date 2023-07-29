@@ -1,4 +1,3 @@
 .home__container {
-    height: 90vh;
-    overflow: hidden;
+    min-height: 90vh;
 }

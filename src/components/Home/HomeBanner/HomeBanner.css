@@ -1,6 +1,6 @@
 .homeBanner__container {
     margin-top: 8rem;
-    padding: 2.4rem 2.4rem 0 2.4rem;
+    padding: 2.4rem;
 
 }
 
@@ -131,7 +131,7 @@
 @media only screen and (max-width: 600px) {
     .homeBanner__container {
         /* padding: 3rem; */
-        padding: 3rem 3rem 0 3rem;
+        padding: 3rem;
 
         margin-top: 0rem;
 
@@ -169,6 +169,7 @@
 
     .homeBanner__right img {
         width: 100%;
+        /* display: none; */
         object-fit: cover;
     }
 
@@ -199,7 +200,7 @@
 
 @media (min-width:601px) and (max-width: 768px) {
     .homeBanner__container {
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem;
         margin-top: 3rem;
 
     }
@@ -255,7 +256,7 @@
 
 @media (min-width:769px) and (max-width: 1024px) {
     .homeBanner__container {
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem;
 
         margin-top: 9rem;
 
