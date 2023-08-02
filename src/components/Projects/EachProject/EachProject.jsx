@@ -19,7 +19,7 @@ const EachProject = ({ link, name, description, liveDemo }) => {
       setShowOverlay(true);
     }, 255);
   };
-  console.log(liveDemo);
+  // console.log(liveDemo);
 
   return (
     <motion.div
