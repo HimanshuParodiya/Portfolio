@@ -3,10 +3,17 @@ import "./EachProject.css";
 import { motion } from "framer-motion";
 import { CgChevronDoubleRight } from "react-icons/cg";
 import { MdOutlineExpandMore } from "react-icons/md";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {
+  addEachProjectImage,
+  addEachProjectLiveDemo,
+  addEachProjectName,
+} from "../../../Store/Slice/EachProjectSlice";
 
 const EachProject = ({ link, name, description, liveDemo }) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const [showOverlay, setShowOverlay] = useState(true);
   const ref = useRef(null);
@@ -55,7 +62,12 @@ const EachProject = ({ link, name, description, liveDemo }) => {
         <div className="overlay__projectDescription">{description}</div>
         <div
           className="overlay__projectDetails"
-          onClick={() => navigate(`/projects/details/${name}`)}
+          onClick={() => {
+            navigate(`/projects/details/${name}`);
+            dispatch(addEachProjectImage(link));
+            dispatch(addEachProjectName(name));
+            dispatch(addEachProjectLiveDemo(liveDemo));
+          }}
         >
           Let's Discover
         </div>
