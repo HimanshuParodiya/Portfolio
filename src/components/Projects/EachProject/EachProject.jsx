@@ -3,9 +3,11 @@ import "./EachProject.css";
 import { motion } from "framer-motion";
 import { CgChevronDoubleRight } from "react-icons/cg";
 import { MdOutlineExpandMore } from "react-icons/md";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 
 const EachProject = ({ link, name, description, liveDemo }) => {
+  const navigate = useNavigate();
+
   const [showOverlay, setShowOverlay] = useState(true);
   const ref = useRef(null);
   const handleShowOverlay = () => {
@@ -51,6 +53,12 @@ const EachProject = ({ link, name, description, liveDemo }) => {
         </motion.div>
         <div className="overlay__projectName">{name}</div>
         <div className="overlay__projectDescription">{description}</div>
+        <div
+          className="overlay__projectDetails"
+          onClick={() => navigate(`/projects/details/${name}`)}
+        >
+          Let's Discover
+        </div>
       </div>
     </motion.div>
   );

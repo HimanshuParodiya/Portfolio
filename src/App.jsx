@@ -6,6 +6,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import About from "./components/About/About";
 import Project from "./components/Projects/Project";
 import { useEffect } from "react";
+import ProjectDetails from "./components/Details/ProjectDetails";
 
 function App() {
   const theme = useSelector((state) => state.theme.appTheme);
@@ -21,6 +22,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Project />} />
+        <Route
+          path="/projects/details/:projectName"
+          element={<ProjectDetails />}
+        />
       </Routes>
     </div>
   );
