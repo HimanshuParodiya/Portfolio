@@ -3,7 +3,8 @@ import "./AboutBanner.css";
 import TypingAnimation from "../../../Utils/TypingAnimation/TypingAnimation";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
-import ArrowDownwardSharpIcon from "@mui/icons-material/ArrowDownwardSharp";
+// import ArrowDownwardSharpIcon from "@mui/icons-material/ArrowDownwardSharp";
+import { MdOutlineExpandMore } from "react-icons/md";
 
 const AboutBanner = () => {
   const theme = useSelector((state) => state.theme.appTheme);
@@ -142,7 +143,7 @@ const AboutBanner = () => {
           // transition={{ yoyo: 10 }}
           className="scroll__down"
         >
-          <ArrowDownwardSharpIcon className="scrollDown__icon" fontSize="30" />
+          <MdOutlineExpandMore className="scrollDown__icon" fontSize="30" />
         </motion.div>
       )}
     </div>

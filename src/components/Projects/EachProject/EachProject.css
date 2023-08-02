@@ -1,0 +1,141 @@
+.eachProject__container {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+}
+
+
+.eachProject__image {
+    height: 50vh;
+    /* width: 100%; */
+}
+
+.eachProject__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: 0% 0%;
+}
+
+.eachProduct__overlay {
+    position: absolute;
+    background-color: #111;
+    opacity: 0.9;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.255s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.4rem;
+    bottom: -100%;
+
+}
+
+
+
+.openOverlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 4rem;
+    color: #845EC2;
+    transform: rotate(180deg);
+}
+
+.overlay__projectName {
+    font-size: 4rem;
+    font-weight: 700;
+    z-index: 2;
+    color: white;
+    color: #845EC2;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.overlay__projectDescription {
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 2;
+    color: white;
+    opacity: 1;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.eachProject__details {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 4rem;
+    color: white;
+}
+
+.closeOverlay {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 4rem;
+    transform-origin: center;
+    color: #845EC2;
+}
+
+@media only screen and (max-width : 600px) {
+    .eachProject__container {
+        width: 400px;
+    }
+
+    .eachProduct__overlay {
+        padding: 2rem;
+
+    }
+
+    .overlay__projectName {
+        font-size: 3rem;
+    }
+
+    .overlay__projectDescription {
+        font-size: 1.6rem;
+    }
+
+
+
+}
+
+@media (min-width : 601px) and (max-width : 768px) {
+    .eachProject__container {
+        width: 500px;
+    }
+
+    .eachProduct__overlay {
+        padding: 2rem;
+    }
+
+    .overlay__projectName {
+        font-size: 3.4rem;
+    }
+
+    .overlay__projectDescription {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width : 769px) and (max-width : 1024px) {
+    .eachProject__container {
+        width: 600px;
+    }
+
+    .eachProduct__overlay {
+        padding: 2rem;
+    }
+
+    .overlay__projectName {
+        font-size: 3.4rem;
+    }
+
+    .overlay__projectDescription {
+        font-size: 1.8rem;
+    }
+}
