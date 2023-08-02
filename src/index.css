@@ -6,7 +6,6 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  overflow-x: hidden;
   /* color: rgba(255, 255, 255, 0.87); */
 
   font-synthesis: none;
@@ -25,6 +24,7 @@
 .container {
   max-width: 140rem;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 body {

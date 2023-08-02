@@ -53,6 +53,7 @@
     flex: 0.4;
     border-radius: 100%;
     overflow: hidden;
+    /* border: 1px solid red; */
 }
 
 .homeBanner__right img {
@@ -131,9 +132,9 @@
 @media only screen and (max-width: 600px) {
     .homeBanner__container {
         /* padding: 3rem; */
-        padding: 3rem;
+        padding: 0 3rem 3rem 3rem;
 
-        margin-top: 0rem;
+        margin-top: 2rem;
 
     }
 
