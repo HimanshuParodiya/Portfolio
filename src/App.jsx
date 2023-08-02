@@ -5,9 +5,13 @@ import Home from "./components/Home/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./components/About/About";
 import Project from "./components/Projects/Project";
+import { useEffect } from "react";
 
 function App() {
   const theme = useSelector((state) => state.theme.appTheme);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={`app ${theme ? "light" : ""}`}>
