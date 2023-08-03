@@ -23,7 +23,7 @@ const EachProject = ({ link, name, description, liveDemo }) => {
     setShowOverlay(false);
   };
   const handleHideOverlay = () => {
-    ref.current.style.bottom = "-100%";
+    ref.current.style.bottom = "-200%";
     setTimeout(() => {
       setShowOverlay(true);
     }, 255);

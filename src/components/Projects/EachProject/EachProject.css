@@ -29,7 +29,7 @@
     align-items: center;
     flex-direction: column;
     padding: 2.4rem;
-    bottom: -100%;
+    bottom: -200%;
 
 }
 
@@ -84,7 +84,18 @@
 
 @media only screen and (max-width : 600px) {
     .eachProject__container {
-        width: 400px;
+        width: 100%;
+
+    }
+
+    .eachProject__image {
+        height: 100%;
+        /* width: 100%; */
+    }
+
+    .eachProject__image img {
+
+        object-fit: contain;
     }
 
     .eachProduct__overlay {
@@ -106,7 +117,20 @@
 
 @media (min-width : 601px) and (max-width : 768px) {
     .eachProject__container {
+        width: 100%;
         width: 500px;
+
+    }
+
+    .eachProject__image {
+        height: 100%;
+        /* width: 100%; */
+    }
+
+    .eachProject__image img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
     }
 
     .eachProduct__overlay {
