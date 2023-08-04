@@ -54,15 +54,7 @@
     text-transform: uppercase;
 }
 
-.overlay__projectDescription {
-    font-size: 2rem;
-    font-weight: 700;
-    z-index: 2;
-    color: white;
-    opacity: 1;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 .eachProject__details {
     transform: rotate(-45deg);
@@ -71,6 +63,15 @@
     right: 1rem;
     font-size: 4rem;
     color: white;
+}
+
+.overlay__projectDetails {
+    color: white;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #845EC2;
+    border-radius: 1rem;
 }
 
 .closeOverlay {

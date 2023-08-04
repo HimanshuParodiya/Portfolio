@@ -6,12 +6,14 @@ import { MdOutlineExpandMore } from "react-icons/md";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import {
+  addEachProjectDescription,
   addEachProjectImage,
   addEachProjectLiveDemo,
   addEachProjectName,
 } from "../../../Store/Slice/EachProjectSlice";
 
 const EachProject = ({ link, name, description, liveDemo }) => {
+  // console.log(description);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -51,15 +53,14 @@ const EachProject = ({ link, name, description, liveDemo }) => {
         </NavLink>
         <motion.div
           initial={{ rotate: "180deg" }}
-          whileInView={{ rotate: "0deg" }}
-          transition={{ duration: 0.5 }}
+          animate={{ rotate: "0deg" }}
+          transition={{ duration: 1 }}
           className="closeOverlay"
           onClick={handleHideOverlay}
         >
           <MdOutlineExpandMore />
         </motion.div>
         <div className="overlay__projectName">{name}</div>
-        <div className="overlay__projectDescription">{description}</div>
         <div
           className="overlay__projectDetails"
           onClick={() => {
@@ -67,9 +68,10 @@ const EachProject = ({ link, name, description, liveDemo }) => {
             dispatch(addEachProjectImage(link));
             dispatch(addEachProjectName(name));
             dispatch(addEachProjectLiveDemo(liveDemo));
+            dispatch(addEachProjectDescription(description));
           }}
         >
-          Let's Discover
+          Know more....
         </div>
       </div>
     </motion.div>

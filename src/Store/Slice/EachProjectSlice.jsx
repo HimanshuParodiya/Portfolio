@@ -4,6 +4,7 @@ const initialState = {
   projectImage: undefined,
   projectName: undefined,
   projectLiveDemo: undefined,
+  projectDescription: undefined,
 };
 
 const eachProjectSlice = createSlice({
@@ -19,6 +20,9 @@ const eachProjectSlice = createSlice({
     addEachProjectLiveDemo: (state, action) => {
       state.projectLiveDemo = action.payload;
     },
+    addEachProjectDescription: (state, action) => {
+      state.projectDescription = action.payload;
+    },
   },
 });
 
@@ -26,6 +30,7 @@ export const {
   addEachProjectImage,
   addEachProjectName,
   addEachProjectLiveDemo,
+  addEachProjectDescription,
 } = eachProjectSlice.actions;
 
 export default eachProjectSlice.reducer;

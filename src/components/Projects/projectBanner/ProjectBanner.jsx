@@ -15,50 +15,52 @@ let projectArray = [
   {
     image: calculator,
     name: "Calculator",
-    description: "This is a Calculator build with HTML, CSS & JS.",
     liveDemo: "https://himanshu-webcalculator.netlify.app/",
+    description:
+      "I created this responsive calculator using HTML, CSS & JS as a means to explore new concepts in javascript. It allowed me to put my continuous learning knowledge into practice by designing its shape and functionality.",
   },
   {
     image: sunnyside,
     name: "Sunnyside",
-    description:
-      "This is frontend mentor challenge which is built with HTML, CSS & JS.",
     liveDemo: "https://himanshu-sunnyside.netlify.app/",
+    description:
+      "I took this challenge form the Frontend Mentor. Where i have to create this responsive landing page using HTML, CSS & JS as a means to explore new concepts in javascript. It allowed me to put my continuous learning knowledge into practice by designing its shape and functionality.",
   },
   {
     image: tesla,
     name: "Tesla",
-    description: "My first Responsive landing page created with React js ",
     liveDemo: "https://himanshu-react-tesla.netlify.app/",
+    description:
+      "when i first start leaning React js I created this responsive clone of Tesla's landing page using Reactjs and Styled-Components i choose using styled-component because i found it very new because in my preivous projects i use alot of plain CSS3 so this time i think while trying new technology like Reactjs i should also choose Styled-Components for CSS as a means to explore new technologies and their working.",
   },
   {
     image: space,
     name: "space tourism",
-    description:
-      "This is frontend mentor challenge which is built with React.js and styled-components.",
     liveDemo: "https://himanshu-react-space.netlify.app/",
+    description:
+      "I took this challenge form frontend Mentor. Where I had to create this responsive Space Tourism multipage React application which some smooth animation using Reactjs. It help me alot to understand the basics like how the react-router-dom and more.",
   },
   {
     image: netflix,
     name: "netflix",
-    description:
-      "This is a Responsive web app created with Reactjs, Reduxjs with firebase authantication ",
     liveDemo: "https://himanshu-react-netflix.netlify.app/",
+    description:
+      "Now, This time i want to create something from real-world. So i Choose Netflix clone with login logout functionality using firebase authantication. Here i explore the React js, Reduxjs, and firebase. How these teachnologies work togather and how to integrate them together. I took help here by Sony Sangha's youtube tutorial. ",
   },
   {
     image: easyfind,
     name: "easyfind",
-    description:
-      "This is a Responsive E-commerce store created with Reactjs & Context Api ",
     liveDemo: "https://himanshu-react-easyfind.netlify.app/",
+    description:
+      "Now, This time was to create my first own E-commerce Web Store. This responsive E-commerce web store was challenging and it help me alot to sharpen my concepts wheather it was  handling API, nifinate Scroll and that how to work on the large Scale projects and more.",
   },
 
   {
     image: movix,
     name: "movix",
-    description:
-      "This is a Responsive web app created with Reactjs, Redux toolkit & Saas ",
     liveDemo: "https://himanshu-react-movix.netlify.app/",
+    description:
+      "Now, finally comes the Movix. With Movix you can find any movie details, their trailers and their Casts and you can also save them in you Favorite Movies section. I have used TMDB database here to get the movies and thier data. To create this responsive Movix app i use Reactjs, ReduxToolkit & Saas. This was the best practice to understand how to handle complex API and their response in real world projects.",
   },
 ];
 
