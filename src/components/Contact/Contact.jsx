@@ -38,8 +38,8 @@ const Contact = () => {
             />
             <ContactCard
               icon={<FiPhoneCall className="contactIcon" />}
-              title="Calendly | Topmate"
-              subtitle="Delhi, India 110052"
+              title="Calendly"
+              subtitlelink="Book a Slot"
             />
           </div>
           <div className="contact__subHeading">Get in Touch</div>

@@ -46,6 +46,11 @@
     color: red;
 }
 
+.contactCard__title a {
+    font-size: 1.8rem;
+    color: white;
+}
+
 @media only screen and (max-width : 600px) {
     .contactCard__container {
         padding: 1rem;
