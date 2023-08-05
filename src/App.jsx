@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Project from "./components/Projects/Project";
 import { useEffect } from "react";
 import ProjectDetails from "./components/Details/ProjectDetails";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const theme = useSelector((state) => state.theme.appTheme);
@@ -26,6 +27,7 @@ function App() {
           path="/projects/details/:projectName"
           element={<ProjectDetails />}
         />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
