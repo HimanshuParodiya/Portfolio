@@ -80,6 +80,11 @@
         flex-direction: column;
     }
 
+    .projectDetails__container {
+        /* overflow: hidden; */
+        height: 100%;
+    }
+
     .projectDetails__right h1.projectDetails__heading {
         font-size: 3rem;
         border-bottom: 3px solid #845EC2;
