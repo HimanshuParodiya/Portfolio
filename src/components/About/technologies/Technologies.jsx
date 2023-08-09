@@ -9,6 +9,7 @@ import {
   SiSass,
   SiStyledcomponents,
   SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandRedux } from "react-icons/tb";
 
@@ -32,6 +33,7 @@ const Technologies = () => {
           color="#E48F83"
         />
         <Card icon={<SiJavascript />} title="JavaScript" color="#F7E025" />
+        <Card icon={<SiTypescript />} title="TypeScript" color="#007BD0" />
         <Card icon={<SiReact />} title="React" color="#1675e0" />
         <Card icon={<TbBrandRedux />} title="Redux" color="#7248B6" />
       </div>

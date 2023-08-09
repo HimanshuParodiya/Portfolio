@@ -1,6 +1,6 @@
 .about__container {
     position: relative;
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
 }
 
 .vertical__progress {

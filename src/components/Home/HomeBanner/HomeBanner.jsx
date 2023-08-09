@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./HomeBanner.css";
 import { useSelector } from "react-redux";
-import MyImage from "/src/assets/me.jpg";
+import MyImage from "/src/assets/me.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import TypingAnimation from "../../../Utils/TypingAnimation/TypingAnimation";
@@ -51,7 +51,7 @@ const HomeBanner = () => {
           transition={{ delay: 0.8, duration: 1 }}
           className="homeBanner__right"
           style={{
-            backgroundColor: !theme ? "#191825" : "#FAF3F0",
+            backgroundColor: !theme ? "#191825" : "#191825",
             filter: ` drop-shadow(2px 2px 10px ${theme ? "#111" : "#fff"})`,
           }}
         >

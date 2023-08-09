@@ -30,6 +30,7 @@
 
 body {
   background-color: #191825;
+  color: white;
 }
 
 body::-webkit-scrollbar {

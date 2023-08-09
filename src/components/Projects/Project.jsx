@@ -14,6 +14,7 @@ const Project = () => {
         style={{ scaleY: scrollYProgress }}
         className="vertical__progress"
       />
+      <TransitionEffect />
       <ProjectBanner />
     </div>
   );
