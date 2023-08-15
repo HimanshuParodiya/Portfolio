@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import "./HomeBanner.css";
 import { useSelector } from "react-redux";
-import MyImage from "/src/assets/me.png";
+import MyImage from "/src/assets/me1.png";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import TypingAnimation from "../../../Utils/TypingAnimation/TypingAnimation";
 // import animatedText from "../../../assets/AnimatedText.png";
 
 const HomeBanner = () => {
+  const navigate = useNavigate();
   const theme = useSelector((state) => state.theme.appTheme);
 
   const myName = useRef(null);
@@ -67,8 +68,8 @@ const HomeBanner = () => {
       >
         <div className="homeBannerBottom__buttons">
           <a
-            href="#"
             className={`button__resume bottom__button ${theme ? "light" : ""}`}
+            onClick={() => navigate("/resume")}
           >
             Resume
           </a>

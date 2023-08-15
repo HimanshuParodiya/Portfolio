@@ -1,0 +1,154 @@
+{
+    "education": [
+        {
+            "degree": "Secondary School",
+            "university": "Govt. Sarvodiya Bal Vidhalaya",
+            "location": "Burari, Delhi, India",
+            "graduation": "2019",
+            "gpa": "84%"
+        },
+        {
+            "degree": "Mechanical Engineering",
+            "university": "Delhi Institute Of Tool Engineering",
+            "location": "Shalimar Bagh, Delhi, India",
+            "graduation": "2019 - 2022",
+            "gpa": "89%"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Front-End Development",
+            "description": [
+                "HTML5",
+                "CSS3",
+                "Bootstrap",
+                "styled-components",
+                "TailwindCss",
+                "Sass",
+                "JavaScript",
+                "responsive design"
+            ]
+        },
+        {
+            "name": "Web Development Tools",
+            "description": [
+                "Git",
+                "npm",
+                "Visual Studio Code",
+                "Chrome DevTools"
+            ]
+        },
+        {
+            "name": "API Integration",
+            "description": [
+                "Utilized APIs like OpenWeatherMap and TMDB for real-time data"
+            ]
+        },
+        {
+            "name": "State Management",
+            "description": [
+                "Redux, ReduxToolkit & Context API"
+            ]
+        },
+        {
+            "name": "Version Control",
+            "description": [
+                "Git for collaboration"
+            ]
+        },
+        {
+            "name": "Package Management",
+            "description": [
+                "npm for project setup"
+            ]
+        },
+        {
+            "name": "Debugging and Testing",
+            "description": [
+                "Used Chrome DevTools for testing"
+            ]
+        },
+        {
+            "name": "Responsive Design",
+            "description": [
+                "Ensured cross-device user experiences"
+            ]
+        },
+        {
+            "name": "UI Frameworks",
+            "description": [
+                "Familiar with Bootstrap TailwindCss Framer Motion Material UI Styled-Components & Sass"
+            ]
+        },
+        {
+            "name": "Basic Backend Concepts",
+            "description": [
+                "Basic understanding of Node.js and Express"
+            ]
+        },
+        {
+            "name": "Problem-Solving",
+            "description": [
+                "Strong analytical and creative problem-solving"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Calculator",
+            "description": "I created this responsive calculator using HTML, CSS & JS as a means to explore new concepts in javascript."
+        },
+        {
+            "name": "SunnySide",
+            "description": "A challenge form the Frontend Mentor. Built with HTML, CSS & JS as a means to explore new concepts in javascript."
+        },
+        {
+            "name": "Tesla Clone",
+            "description": "My First Reactjs js project. This clone of Tesla's landing page build using Reactjs and to try something new i choose Styled-Components."
+        },
+        {
+            "name": "SPACE TOURISM",
+            "description": "A challenge form frontend Mentor. Built with Reactjs. To understand the basics like how the react-router-dom and more."
+        },
+        {
+            "name": "Easy Find A E-commerce",
+            "description": "My first own E-commerce Web Store. It help me alot to sharpen my concepts wheather it was handling API Calls, Inifinate Scroll, Concepts like Context Api and how to work on the large Scale projects and more."
+        },
+        {
+            "name": "Netflix Clone",
+            "description": "Netflix clone with login logout functionality using firebase authantication. Here i explore the React js, Reduxjs, and firebase. I took help here by Sony Sangha's youtube tutorial. "
+        },
+        {
+            "name": "Movix ",
+            "description": "The Movix here you can find details of any movie, their trailers and their Casts and you can also save them in you Favorite Movies section.Build with  Reactjs, ReduxToolkit & Sass. Here i Work with TMDB database to get the movies and thier data. This was the best practice to understand how to handle complex API and their response in real world projects."
+        },
+        {
+            "name": "Portfolio Website",
+            "description": "Responsive portfolio showcasing projects, skills, and resume. Build with Reactjs, Reduxjs, ReduxToolkit, Framer-Motion."
+        }
+    ],
+    "additionalSkills": [
+        {
+            "name": "Teamwork and Communication",
+            "description": "Excellent teamwork and communication through group projects."
+        },
+        {
+            "name": "Adaptability",
+            "description": "Quick learning and adaptation evident from career transition."
+        },
+        {
+            "name": "Detail Orientation",
+            "description": "Detail-oriented with commitment to high-quality code and design."
+        }
+    ],
+    "languages": [
+        "Fluent in English (written and spoken).",
+        "Fluent in Hindi (written and spoken)."
+    ],
+    "interests": [
+        "Exploring the latest web development trends and technologies.",
+        "Participating in online coding communities to learn and share.",
+        "Engaging in gym workouts and fitness tracking for a healthy lifestyle.",
+        "Playing cricket and staying active outdoors."
+    ]
+}

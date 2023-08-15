@@ -4,6 +4,7 @@ import EachProject from "../EachProject/EachProject";
 
 import sunnyside from "/src/assets/sunnyside.png";
 import calculator from "/src/assets/webcalculator.png";
+import weather from "/src/assets/Weather.png";
 import tesla from "/src/assets/tesla.png";
 import space from "/src/assets/space.png";
 import netflix from "/src/assets/netflix.png";
@@ -25,6 +26,13 @@ let projectArray = [
     liveDemo: "https://himanshu-sunnyside.netlify.app/",
     description:
       "I took this challenge form the Frontend Mentor. Where i have to create this responsive landing page using HTML, CSS & JS as a means to explore new concepts in javascript. It allowed me to put my continuous learning knowledge into practice by designing its shape and functionality.",
+  },
+  {
+    image: weather,
+    name: "Weather App",
+    liveDemo: "https://himanshu-weather.netlify.app/",
+    description:
+      "This is my very first app where i work with API of OpenWeather. Where i created this responsive weather  using HTML, CSS & JS as a means to explore new concepts in javascript. It allowed me to understood the basic of fetching data and showing on our page.",
   },
   {
     image: tesla,
@@ -60,7 +68,7 @@ let projectArray = [
     name: "movix",
     liveDemo: "https://himanshu-react-movix.netlify.app/",
     description:
-      "Now, finally comes the Movix. With Movix you can find any movie details, their trailers and their Casts and you can also save them in you Favorite Movies section. I have used TMDB database here to get the movies and thier data. To create this responsive Movix app i use Reactjs, ReduxToolkit & Saas. This was the best practice to understand how to handle complex API and their response in real world projects.",
+      "Now, finally comes the Movix. With Movix you can find any movie details, their trailers and their Casts and you can also save them in you Favorite Movies section. I have used TMDB database here to get the movies and thier data. To create this responsive Movix app i use Reactjs, ReduxToolkit & Sass. This was the best practice to understand how to handle complex API and their response in real world projects.",
   },
 ];
 
