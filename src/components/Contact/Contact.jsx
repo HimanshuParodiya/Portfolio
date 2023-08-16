@@ -29,7 +29,7 @@ const Contact = () => {
               subIcons={[
                 {
                   subIcon: <SiLinkedin className="contact__subIcons" />,
-                  link: "https://www.linkedin.com/in/anupriya-jha/",
+                  link: "https://www.linkedin.com/in/himanshuparodia/",
                 },
                 {
                   subIcon: <SiGithub className="contact__subIcons" />,

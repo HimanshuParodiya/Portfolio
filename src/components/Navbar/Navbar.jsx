@@ -31,7 +31,9 @@ const Navbar = () => {
   return (
     <header className="header__container  container">
       <nav className={`navbar__container ${theme ? "light" : ""}`}>
-        <div className="logo">HP</div>
+        <NavLink to="/" className="logo">
+          HP
+        </NavLink>
         <div className={`navbar__menu ${theme ? "light" : ""}`}>
           <div className="hamburgerMenu" onClick={handleHamburgerMenu}>
             {showHamburger ? <GiHamburgerMenu /> : <RxCross2 />}
