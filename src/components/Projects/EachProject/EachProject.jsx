@@ -17,19 +17,6 @@ const EachProject = ({ link, name, description, liveDemo }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const [showOverlay, setShowOverlay] = useState(true);
-  const ref = useRef(null);
-  const handleShowOverlay = () => {
-    ref.current.style.bottom = "0%";
-    ref.current.style.height = "100%";
-    setShowOverlay(false);
-  };
-  const handleHideOverlay = () => {
-    ref.current.style.bottom = "-200%";
-    setTimeout(() => {
-      setShowOverlay(true);
-    }, 255);
-  };
   // console.log(liveDemo);
 
   return (
@@ -41,38 +28,18 @@ const EachProject = ({ link, name, description, liveDemo }) => {
     >
       <div className="eachProject__image">
         <img loading="lazy" src={link} alt="Project Image" />
-        {showOverlay && (
-          <div className="openOverlay" onClick={handleShowOverlay}>
-            <MdOutlineExpandMore />
-          </div>
-        )}
       </div>
-      <div className="eachProduct__overlay" ref={ref}>
-        <NavLink target="_blank" to={liveDemo} className="eachProject__details">
-          <CgChevronDoubleRight />
-        </NavLink>
-        <motion.div
-          initial={{ rotate: "180deg" }}
-          animate={{ rotate: "0deg" }}
-          transition={{ duration: 1 }}
-          className="closeOverlay"
-          onClick={handleHideOverlay}
-        >
-          <MdOutlineExpandMore />
-        </motion.div>
-        <div className="overlay__projectName">{name}</div>
-        <div
-          className="overlay__projectDetails"
-          onClick={() => {
-            navigate(`/projects/details/${name}`);
-            dispatch(addEachProjectImage(link));
-            dispatch(addEachProjectName(name));
-            dispatch(addEachProjectLiveDemo(liveDemo));
-            dispatch(addEachProjectDescription(description));
-          }}
-        >
-          Know more....
-        </div>
+      <div
+        className="eachProject__projectDetails"
+        onClick={() => {
+          navigate(`/projects/details/${name}`);
+          dispatch(addEachProjectImage(link));
+          dispatch(addEachProjectName(name));
+          dispatch(addEachProjectLiveDemo(liveDemo));
+          dispatch(addEachProjectDescription(description));
+        }}
+      >
+        Know more
       </div>
     </motion.div>
   );
