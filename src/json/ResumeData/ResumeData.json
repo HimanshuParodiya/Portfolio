@@ -100,18 +100,22 @@
         },
         {
             "name": "SunnySide",
-            "description": "A challenge form the Frontend Mentor. Built with HTML, CSS & JS as a means to explore new concepts in javascript."
+            "description": "A challenge from the Frontend Mentor. Built with HTML, CSS & JS as a means to explore new concepts in javascript."
+        },
+        {
+            "name": "Weather App",
+            "description": "This is my very first app where I work with the API of OpenWeather. Where I created this responsive weather web app using HTML, CSS & JS."
         },
         {
             "name": "Tesla Clone",
             "description": "My First Reactjs js project. This clone of Tesla's landing page build using Reactjs and to try something new i choose Styled-Components."
         },
         {
-            "name": "SPACE TOURISM",
-            "description": "A challenge form frontend Mentor. Built with Reactjs. To understand the basics like how the react-router-dom and more."
+            "name": "Space Tourism",
+            "description": "A challenge from frontend Mentor. Built with Reactjs. To understand the basics like how the react-router-dom and more."
         },
         {
-            "name": "Easy Find A E-commerce",
+            "name": "EasyFind",
             "description": "My first own E-commerce Web Store. It help me alot to sharpen my concepts wheather it was handling API Calls, Inifinate Scroll, Concepts like Context Api and how to work on the large Scale projects and more."
         },
         {

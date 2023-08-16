@@ -2,6 +2,7 @@ import React from "react";
 import "./Resume.css";
 import resumeData from "../../json/ResumeData/ResumeData.json";
 import TransitionEffect from "../Transition/TransitionEffect";
+import { NavLink } from "react-router-dom";
 
 const Resume = () => {
   return (
@@ -9,7 +10,18 @@ const Resume = () => {
       <TransitionEffect />
 
       <div className="resume__heading">Check My Resumes</div>
-      <div className="resume__download">Download Resume</div>
+      <div>
+        <NavLink
+          to={
+            "https://drive.google.com/file/d/1vRnkLtwMfiEayNBv880rYHbdNuR3nCU5/view?usp=sharing"
+          }
+          download
+          target="_blank"
+          className="resume__download"
+        >
+          Download Resume
+        </NavLink>
+      </div>
 
       <div className="resume__eachSection">
         {/* Education  */}
@@ -75,7 +87,7 @@ const Resume = () => {
           </div>
         </div>
         <div className="resume__projects">
-          <div className="resume__subSectionHeading">AdditionalSkills</div>
+          <div className="resume__subSectionHeading">Additional Skills</div>
           <ul>
             {resumeData.additionalSkills.map((item, index) => {
               return (

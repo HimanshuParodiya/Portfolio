@@ -37,10 +37,10 @@
 
 .openOverlay {
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 0rem;
+    left: 0rem;
     font-size: 5rem;
-    color: #845EC2;
+    color: #5b0bdc;
     transform: rotate(180deg);
 }
 
@@ -76,11 +76,11 @@
 
 .closeOverlay {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 4rem;
+    top: 0rem;
+    left: 0rem;
+    font-size: 5rem;
     transform-origin: center;
-    color: #845EC2;
+    color: #5b0bdc;
 }
 
 @media only screen and (max-width : 600px) {

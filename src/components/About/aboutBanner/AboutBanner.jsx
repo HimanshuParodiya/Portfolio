@@ -68,10 +68,10 @@ const AboutBanner = () => {
             transition={{ delay: 0.5, duration: 1 }}
             className={` ${theme ? "light" : ""}`}
           >
-            I am an ambitious Frontend Developer with a background in mechanical
-            engineering. Driven by curiosity and a passion for technology, I
-            made the leap into frontend development and fully immersed myself
-            with a lot of practice with
+            I am an ambitious self-taught Frontend Developer with a background
+            in mechanical engineering. Driven by curiosity and a passion for
+            technology, I made the leap into frontend development and fully
+            immersed myself with a lot of practice with
             <span className="highlighted__text"> HTML, CSS, JavaScript, </span>
             and various frameworks like{" "}
             <span className="highlighted__text"> React.js and Redux.js</span>.
