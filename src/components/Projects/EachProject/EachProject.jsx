@@ -41,12 +41,12 @@ const EachProject = ({ link, name, description, liveDemo }) => {
     >
       <div className="eachProject__image">
         <img loading="lazy" src={link} alt="Project Image" />
+        {showOverlay && (
+          <div className="openOverlay" onClick={handleShowOverlay}>
+            <MdOutlineExpandMore />
+          </div>
+        )}
       </div>
-      {showOverlay && (
-        <div className="openOverlay" onClick={handleShowOverlay}>
-          <MdOutlineExpandMore />
-        </div>
-      )}
       <div className="eachProduct__overlay" ref={ref}>
         <NavLink target="_blank" to={liveDemo} className="eachProject__details">
           <CgChevronDoubleRight />

@@ -3,7 +3,7 @@ import "./Contact.css";
 import ContactCard from "./contactCard/ContactCard";
 import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
 import { FiPhoneCall, FiShare2 } from "react-icons/fi";
-import { SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { GrInstagram } from "react-icons/gr";
 import { useSelector } from "react-redux";
 import TransitionEffect from "../Transition/TransitionEffect";
@@ -27,8 +27,18 @@ const Contact = () => {
               icon={<FiShare2 className="contactIcon" />}
               title="Social Profiles"
               subIcons={[
-                <SiLinkedin className="contact__subIcons" />,
-                <GrInstagram className="contact__subIcons" />,
+                {
+                  subIcon: <SiLinkedin className="contact__subIcons" />,
+                  link: "https://www.linkedin.com/in/anupriya-jha/",
+                },
+                {
+                  subIcon: <SiGithub className="contact__subIcons" />,
+                  link: "https://github.com/HimanshuParodiya",
+                },
+                {
+                  subIcon: <GrInstagram className="contact__subIcons" />,
+                  link: "https://www.instagram.com/himanshuparodiya/",
+                },
               ]}
             />
             <ContactCard
@@ -49,7 +59,16 @@ const Contact = () => {
             to reach out. I am constantly looking for new opportunities in
             industry, I am willing to work in the field of web-development.
           </div>
-          <div className="contact__button">Contact Me</div>
+          <form
+            action="mailto:jayreactdeveloper@gmail.com"
+            method="GET"
+            encType="text/plain"
+            className="contact__form"
+          >
+            <button type="submit" className="contact__button">
+              Contact Me
+            </button>
+          </form>
         </div>
       </div>
     </>

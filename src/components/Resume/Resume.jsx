@@ -1,10 +1,13 @@
 import React from "react";
 import "./Resume.css";
 import resumeData from "../../json/ResumeData/ResumeData.json";
+import TransitionEffect from "../Transition/TransitionEffect";
 
 const Resume = () => {
   return (
     <div className="resume__container container">
+      <TransitionEffect />
+
       <div className="resume__heading">Check My Resumes</div>
       <div className="resume__download">Download Resume</div>
 

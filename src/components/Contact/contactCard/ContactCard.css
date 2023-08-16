@@ -38,13 +38,7 @@
     cursor: pointer;
 }
 
-.contact__subIcons:hover:first-child {
-    color: blue;
-}
 
-.contact__subIcons:hover:last-child {
-    color: red;
-}
 
 .contactCard__title a {
     font-size: 1.8rem;

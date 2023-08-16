@@ -25,42 +25,42 @@ let projectArray = [
     name: "Sunnyside",
     liveDemo: "https://himanshu-sunnyside.netlify.app/",
     description:
-      "I took this challenge form the Frontend Mentor. Where i have to create this responsive landing page using HTML, CSS & JS as a means to explore new concepts in javascript. It allowed me to put my continuous learning knowledge into practice by designing its shape and functionality.",
+      "I took this challenge from the Frontend Mentor. Where I have to create this responsive landing page using HTML, CSS & JS as a means to explore new concepts in javascript. It allowed me to put my continuous learning knowledge into practice by designing its shape and functionality.",
   },
   {
     image: weather,
     name: "Weather App",
     liveDemo: "https://himanshu-weather.netlify.app/",
     description:
-      "This is my very first app where i work with API of OpenWeather. Where i created this responsive weather  using HTML, CSS & JS as a means to explore new concepts in javascript. It allowed me to understood the basic of fetching data and showing on our page.",
+      "This is my very first app where I work with the API of OpenWeather. Where I created this responsive weather using HTML, CSS & JS as a means to explore new concepts in javascript. It allowed me to understand the basic of fetching data and showing it on our page.",
   },
   {
     image: tesla,
     name: "Tesla",
     liveDemo: "https://himanshu-react-tesla.netlify.app/",
     description:
-      "when i first start leaning React js I created this responsive clone of Tesla's landing page using Reactjs and Styled-Components i choose using styled-component because i found it very new because in my preivous projects i use alot of plain CSS3 so this time i think while trying new technology like Reactjs i should also choose Styled-Components for CSS as a means to explore new technologies and their working.",
+      "When I first start learning React js I created this responsive clone of Tesla's landing page using Reactjs and Styled-Components I choose using styled-component because I found it very new because, in my previous projects, I use a lot of plain CSS3 so this time I think while trying new technology like Reactjs I should also choose Styled-Components for CSS as a means to explore new technologies and their working.",
   },
   {
     image: space,
     name: "space tourism",
     liveDemo: "https://himanshu-react-space.netlify.app/",
     description:
-      "I took this challenge form frontend Mentor. Where I had to create this responsive Space Tourism multipage React application which some smooth animation using Reactjs. It help me alot to understand the basics like how the react-router-dom and more.",
+      "I took this challenge from the frontend Mentor. Where I had to create this responsive Space Tourism multipage React application which some smooth animation using Reactjs. It helps me a lot to understand the basics like how the react-router-dom and more.",
   },
   {
     image: netflix,
-    name: "netflix",
+    name: "Netflix",
     liveDemo: "https://himanshu-react-netflix.netlify.app/",
     description:
-      "Now, This time i want to create something from real-world. So i Choose Netflix clone with login logout functionality using firebase authantication. Here i explore the React js, Reduxjs, and firebase. How these teachnologies work togather and how to integrate them together. I took help here by Sony Sangha's youtube tutorial. ",
+      "Now, This time I want to create something from the real world. So I Choose a Netflix clone with login logout functionality using Firebase authentication. Here I explore React js, Redux js, and Firebase. How these technologies work together and how to integrate them. I took help here from Sony Sangha's youtube tutorial. ",
   },
   {
     image: easyfind,
-    name: "easyfind",
+    name: "Easyfind",
     liveDemo: "https://himanshu-react-easyfind.netlify.app/",
     description:
-      "Now, This time was to create my first own E-commerce Web Store. This responsive E-commerce web store was challenging and it help me alot to sharpen my concepts wheather it was  handling API, nifinate Scroll and that how to work on the large Scale projects and more.",
+      "Now, This time was to create my first own E-commerce Web Store. This responsive E-commerce web store was challenging and it help me a lot to sharpen my concepts whether it was  handling API, infinite Scroll how to work on large-scale projects, and more.",
   },
 
   {
@@ -68,7 +68,7 @@ let projectArray = [
     name: "movix",
     liveDemo: "https://himanshu-react-movix.netlify.app/",
     description:
-      "Now, finally comes the Movix. With Movix you can find any movie details, their trailers and their Casts and you can also save them in you Favorite Movies section. I have used TMDB database here to get the movies and thier data. To create this responsive Movix app i use Reactjs, ReduxToolkit & Sass. This was the best practice to understand how to handle complex API and their response in real world projects.",
+      "Now, finally comes the Movix. With Movix you can find any movie details, their trailers, and their Casts and you can also save them in your Favorite Movies section. I have used the TMDB database here to get the movies and their data. To create this responsive Movix app I use Reactjs, ReduxToolkit & Sass. This was the best practice to understand how to handle complex API and their response in real-world projects.",
   },
 ];
 

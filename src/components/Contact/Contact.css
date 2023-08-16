@@ -64,12 +64,18 @@
     font-size: 1.6rem;
 }
 
-.contact__button {
+.contact__form {
     text-align: center;
-    /* display: inline-block; */
+    width: 100%;
     margin-top: 3rem;
-    font-size: 2rem;
+
+}
+
+.contact__button {
+    /* display: inline-block; */
+    width: 100%;
     padding: 1.6rem 2rem;
+    font-size: 2rem;
     border: 2px solid #845EC2;
     background-color: rgba(7, 7, 7, 0.9);
     color: #845EC2;
@@ -77,6 +83,7 @@
     cursor: pointer;
     border-radius: 1rem;
 }
+
 
 
 @media only screen and (max-width : 600px) {
@@ -109,9 +116,6 @@
         font-size: 1.4rem;
     }
 
-    .contact__button {
-        margin-top: 2rem;
-    }
 
 }
 
@@ -146,9 +150,7 @@
         font-size: 1.5rem;
     }
 
-    .contact__button {
-        margin-top: 2rem;
-    }
+
 
 }
 
@@ -183,8 +185,5 @@
         font-size: 1.5rem;
     }
 
-    .contact__button {
-        margin-top: 2rem;
-    }
 
 }

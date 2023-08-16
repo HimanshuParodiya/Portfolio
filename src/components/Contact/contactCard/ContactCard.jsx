@@ -12,8 +12,12 @@ const ContactCard = ({ icon, title, subtitle, subIcons, subtitlelink }) => {
           <span>{subtitle}</span>
         ) : subIcons ? (
           <span>
-            {subIcons.map((subIcon) => {
-              return subIcon;
+            {subIcons.map((item, index) => {
+              return (
+                <NavLink target="_blank" to={item.link} key={index}>
+                  {item.subIcon}
+                </NavLink>
+              );
             })}
           </span>
         ) : (

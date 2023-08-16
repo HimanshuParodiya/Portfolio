@@ -71,7 +71,7 @@ const AboutBanner = () => {
             I am an ambitious Frontend Developer with a background in mechanical
             engineering. Driven by curiosity and a passion for technology, I
             made the leap into frontend development and fully immersed myself
-            with alot of practice with
+            with a lot of practice with
             <span className="highlighted__text"> HTML, CSS, JavaScript, </span>
             and various frameworks like{" "}
             <span className="highlighted__text"> React.js and Redux.js</span>.
