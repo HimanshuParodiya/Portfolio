@@ -79,7 +79,7 @@ const Navbar = () => {
                 to="/achievement"
                 className={`navbar__menuLink ${theme ? "light" : ""}`}
               >
-                Achievement
+                Achievements
               </NavLink>
             </li>
             <li className="navbar__menuLi">

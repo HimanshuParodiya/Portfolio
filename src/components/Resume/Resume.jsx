@@ -9,7 +9,7 @@ const Resume = () => {
     <div className="resume__container container">
       <TransitionEffect />
 
-      <div className="resume__heading">Check My Resumes</div>
+      <div className="resume__heading">Check My Resume</div>
       <div>
         <NavLink
           to={
