@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { Suspense, useRef, useState } from "react";
 import "./EachProject.css";
 import { motion } from "framer-motion";
 import { CgChevronDoubleRight } from "react-icons/cg";
@@ -26,21 +26,23 @@ const EachProject = ({ link, name, description, liveDemo }) => {
       transition={{ delay: 0.2, duration: 1 }}
       className="eachProject__container"
     >
-      <div className="eachProject__image">
-        <img loading="lazy" src={link} alt="Project Image" />
-      </div>
-      <div
-        className="eachProject__projectDetails"
-        onClick={() => {
-          navigate(`/projects/details/${name}`);
-          dispatch(addEachProjectImage(link));
-          dispatch(addEachProjectName(name));
-          dispatch(addEachProjectLiveDemo(liveDemo));
-          dispatch(addEachProjectDescription(description));
-        }}
-      >
-        Know more
-      </div>
+      <Suspense fallback={"hello"}>
+        <div className="eachProject__image">
+          <img loading="lazy" src={link} alt="Project Image" />
+        </div>
+        <div
+          className="eachProject__projectDetails"
+          onClick={() => {
+            navigate(`/projects/details/${name}`);
+            dispatch(addEachProjectImage(link));
+            dispatch(addEachProjectName(name));
+            dispatch(addEachProjectLiveDemo(liveDemo));
+            dispatch(addEachProjectDescription(description));
+          }}
+        >
+          Know more
+        </div>
+      </Suspense>
     </motion.div>
   );
 };

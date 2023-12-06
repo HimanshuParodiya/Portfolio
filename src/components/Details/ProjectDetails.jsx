@@ -3,6 +3,7 @@ import "./ProjectDetails.css";
 import { useSelector } from "react-redux";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import Loader from "../Loader/Loader";
 const ProjectDetails = () => {
   const theme = useSelector((state) => state.theme.appTheme);
 
@@ -40,7 +41,9 @@ const ProjectDetails = () => {
         </div>
       )}
       {showLoading ? (
-        <div className="projectDetails__loadingIcon">loading</div>
+        <div className="projectDetails__loadingIcon">
+          <Loader />
+        </div>
       ) : (
         <div className="projectDetails__content">
           <div className="projectDetails__left">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./ProjectBanner.css";
 import EachProject from "../EachProject/EachProject";
 
@@ -11,6 +11,7 @@ import netflix from "/src/assets/netflix.png";
 import easyfind from "/src/assets/easyfind.png";
 import movix from "/src/assets/movix.png";
 import portfolio3d from "/src/assets/3dPortfolio.png";
+import Loader from "../../Loader/Loader";
 
 // let projectArray = [sunnyside, tesla, space, netflix, easyfind, movix];
 let projectArray = [
@@ -85,17 +86,19 @@ const ProjectBanner = () => {
     <div className="projectBanner__container container">
       <div className="projectBanner__heading">From Concept to Creation</div>
       <div className="projectBanner__card">
-        {projectArray.map((item, index) => {
-          return (
-            <EachProject
-              key={index}
-              link={item.image}
-              name={item.name}
-              description={item.description}
-              liveDemo={item.liveDemo}
-            />
-          );
-        })}
+        <Suspense fallback={<Loader />}>
+          {projectArray.map((item, index) => {
+            return (
+              <EachProject
+                key={index}
+                link={item.image}
+                name={item.name}
+                description={item.description}
+                liveDemo={item.liveDemo}
+              />
+            );
+          })}
+        </Suspense>
       </div>
     </div>
   );
