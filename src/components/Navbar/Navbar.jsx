@@ -76,6 +76,15 @@ const Navbar = () => {
             <li className="navbar__menuLi">
               <NavLink
                 activeclassname="active"
+                to="/achievement"
+                className={`navbar__menuLink ${theme ? "light" : ""}`}
+              >
+                Achievement
+              </NavLink>
+            </li>
+            <li className="navbar__menuLi">
+              <NavLink
+                activeclassname="active"
                 to="/contact"
                 className={`navbar__menuLink ${theme ? "light" : ""}`}
               >

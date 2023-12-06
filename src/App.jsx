@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import ProjectDetails from "./components/Details/ProjectDetails";
 import Contact from "./components/Contact/Contact";
 import Resume from "./components/Resume/Resume";
+import Achievement from "./components/Achievements/Achievement";
 
 function App() {
   const theme = useSelector((state) => state.theme.appTheme);
@@ -29,6 +30,7 @@ function App() {
           element={<ProjectDetails />}
         />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/achievement" element={<Achievement />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
     </div>
