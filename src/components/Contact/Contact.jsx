@@ -3,7 +3,7 @@ import "./Contact.css";
 import ContactCard from "./contactCard/ContactCard";
 import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
 import { FiPhoneCall, FiShare2 } from "react-icons/fi";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLeetcode, SiLinkedin } from "react-icons/si";
 import { GrInstagram } from "react-icons/gr";
 import { useSelector } from "react-redux";
 import TransitionEffect from "../Transition/TransitionEffect";
@@ -38,6 +38,10 @@ const Contact = () => {
                 {
                   subIcon: <GrInstagram className="contact__subIcons" />,
                   link: "https://www.instagram.com/himanshuparodiya/",
+                },
+                {
+                  subIcon: <SiLeetcode className="contact__subIcons" />,
+                  link: "https://leetcode.com/himanshuparodiya/",
                 },
               ]}
             />

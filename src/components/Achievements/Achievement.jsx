@@ -1,12 +1,13 @@
 import React from "react";
 import "./Achievement.css";
 import TransitionEffect from "../Transition/TransitionEffect";
+import Certificates from "./Certificates/Certificates";
 
 const Achievement = () => {
   return (
     <div className="container">
       <TransitionEffect />
-      Achievement
+      <Certificates />
     </div>
   );
 };
