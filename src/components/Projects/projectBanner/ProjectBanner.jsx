@@ -10,6 +10,7 @@ import space from "/src/assets/space.png";
 import netflix from "/src/assets/netflix.png";
 import easyfind from "/src/assets/easyfind.png";
 import movix from "/src/assets/movix.png";
+import portfolio3d from "/src/assets/3dPortfolio.png";
 
 // let projectArray = [sunnyside, tesla, space, netflix, easyfind, movix];
 let projectArray = [
@@ -69,6 +70,13 @@ let projectArray = [
     liveDemo: "https://himanshu-react-movix.netlify.app/",
     description:
       "Now, finally comes the Movix. With Movix you can find any movie details, their trailers, and their Casts and you can also save them in your Favorite Movies section. I have used the TMDB database here to get the movies and their data. To create this responsive Movix app I use Reactjs, ReduxToolkit & Sass. This was the best practice to understand how to handle complex API and their response in real-world projects.",
+  },
+  {
+    image: portfolio3d,
+    name: "3d Portfolio",
+    liveDemo: "https://himanshu-3d-me.netlify.app/",
+    description:
+      "Create this 3d portfolio during learning three.js watching online tutorial by Javascript Mastery",
   },
 ];
 
