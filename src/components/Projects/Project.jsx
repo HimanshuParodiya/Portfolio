@@ -6,7 +6,7 @@ import TransitionEffect from "../Transition/TransitionEffect";
 const Project = () => {
   return (
     <div className="project__container container">
-      {/* <TransitionEffect /> */}
+      <TransitionEffect />
 
       <ProjectBanner />
     </div>
