@@ -29,7 +29,7 @@ const EachProject = ({ link, name, description, liveDemo }) => {
     >
       <div className="eachProject__image">
         <Suspense fallback={<Loader />}>
-          <img loading="lazy" src={link} alt="Project Image" />
+          <img src={link} alt="Project Image" />
         </Suspense>
       </div>
       <div
