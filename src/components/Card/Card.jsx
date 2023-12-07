@@ -25,6 +25,7 @@ const Card = ({ icon, title, color }) => {
           className="cardItem"
           style={{
             background: `${color}`,
+            color: "white",
             filter: `drop-shadow(3px 3px 5px ${color} )`,
           }}
         >
