@@ -1,5 +1,6 @@
 .certificates__container {
     margin-top: 5rem;
+    padding: 2.4rem;
 }
 
 .certificates__heading {
@@ -24,7 +25,7 @@
 
 .certificates__images {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 3rem;

@@ -1,12 +1,7 @@
 import React from "react";
 import "./Certificates.css";
 import EachCertificate from "./EachCertificate";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { LiaCertificateSolid } from "react-icons/lia";
 import cssCertificate from "../../../assets/css_certificate.png";
 import ReactCertificate from "../../../assets/React_certificate.png";
 import JavascriptCertificate from "../../../assets/Javascript_certificate.png";
