@@ -22,6 +22,10 @@
 
 }
 
-.certificates__eachContainer {
-    border-radius: 10rem;
+.certificates__images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3rem;
 }
