@@ -13,7 +13,7 @@ const Resume = () => {
       <div>
         <NavLink
           to={
-            "https://drive.google.com/file/d/1vRnkLtwMfiEayNBv880rYHbdNuR3nCU5/view?usp=sharing"
+            "https://drive.google.com/file/d/1lQ3m-2aXJG4SDSxbylA7YfYEBpkyn2fh/view?usp=sharing"
           }
           download
           target="_blank"

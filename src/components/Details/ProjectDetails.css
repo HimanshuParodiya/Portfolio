@@ -6,7 +6,9 @@
 
 .projectDetails__container {
     overflow: hidden;
-    height: 90vh;
+    min-height: 90vh;
+    height: 100%;
+
 }
 
 .projectDetails__container .light {
