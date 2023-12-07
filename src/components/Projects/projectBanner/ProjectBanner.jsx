@@ -86,19 +86,18 @@ const ProjectBanner = () => {
     <div className="projectBanner__container container">
       <div className="projectBanner__heading">From Concept to Creation</div>
       <div className="projectBanner__card">
-        <Suspense fallback={<Loader />}>
-          {projectArray.map((item, index) => {
-            return (
+        {projectArray.map((item, index) => {
+          return (
+            <Suspense key={index} fallback={<Loader />}>
               <EachProject
-                key={index}
                 link={item.image}
                 name={item.name}
                 description={item.description}
                 liveDemo={item.liveDemo}
               />
-            );
-          })}
-        </Suspense>
+            </Suspense>
+          );
+        })}
       </div>
     </div>
   );

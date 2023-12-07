@@ -11,6 +11,7 @@ import {
   addEachProjectLiveDemo,
   addEachProjectName,
 } from "../../../Store/Slice/EachProjectSlice";
+import Loader from "../../Loader/Loader";
 
 const EachProject = ({ link, name, description, liveDemo }) => {
   // console.log(description);
@@ -26,23 +27,23 @@ const EachProject = ({ link, name, description, liveDemo }) => {
       transition={{ delay: 0.2, duration: 1 }}
       className="eachProject__container"
     >
-      <Suspense fallback={"hello"}>
-        <div className="eachProject__image">
+      <div className="eachProject__image">
+        <Suspense fallback={<Loader />}>
           <img loading="lazy" src={link} alt="Project Image" />
-        </div>
-        <div
-          className="eachProject__projectDetails"
-          onClick={() => {
-            navigate(`/projects/details/${name}`);
-            dispatch(addEachProjectImage(link));
-            dispatch(addEachProjectName(name));
-            dispatch(addEachProjectLiveDemo(liveDemo));
-            dispatch(addEachProjectDescription(description));
-          }}
-        >
-          Know more
-        </div>
-      </Suspense>
+        </Suspense>
+      </div>
+      <div
+        className="eachProject__projectDetails"
+        onClick={() => {
+          navigate(`/projects/details/${name}`);
+          dispatch(addEachProjectImage(link));
+          dispatch(addEachProjectName(name));
+          dispatch(addEachProjectLiveDemo(liveDemo));
+          dispatch(addEachProjectDescription(description));
+        }}
+      >
+        Know more
+      </div>
     </motion.div>
   );
 };
